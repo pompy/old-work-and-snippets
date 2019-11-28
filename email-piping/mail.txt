@@ -1,0 +1,40 @@
+From tosomdutt@gmail.com Sat Jul 02 01:49:07 2011
+Received: from mail-gx0-f182.google.com ([209.85.161.182])
+	by harley.mochahost.com with esmtps (TLSv1:RC4-SHA:128)
+	(Exim 4.69)
+	(envelope-from <tosomdutt@gmail.com>)
+	id 1Qcu0p-0007zC-Px
+	for mydear-23432@brandlocato.com; Sat, 02 Jul 2011 01:49:07 -0500
+Received: by gxk28 with SMTP id 28so1974877gxk.41
+        for <mydear-23432@brandlocato.com>; Fri, 01 Jul 2011 23:49:05 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=gamma;
+        h=mime-version:date:message-id:subject:from:to:content-type;
+        bh=dipo8XfuLtQZgkTbR6Pj8bDL28QRdZd9LIX7FyYZdLM=;
+        b=mTOmkChs1ESRRh6MATnqgsvSnlaHoRL8vD0ZCSZ41g4DbXE9wXcqmC+n5k1AbF/XdD
+         0bNmoVVK8UQ7NoYJ1BkZMAlMSWIIf4R/1087V4cSm9WFLcXzLx7PbLmBFn1ROm/GxwYj
+         3fQKPKCuCPkPAo6q4ObcNaW1Nr2PZ7ys9njOE=
+MIME-Version: 1.0
+Received: by 10.236.187.41 with SMTP id x29mr5225868yhm.324.1309589345315;
+ Fri, 01 Jul 2011 23:49:05 -0700 (PDT)
+Received: by 10.236.109.142 with HTTP; Fri, 1 Jul 2011 23:49:05 -0700 (PDT)
+Date: Sat, 2 Jul 2011 12:19:05 +0530
+Message-ID: <CABWAwRbniurHtah6R22_DxnO=75hN7EkyTkV7k45eu7i8kVMTA@mail.gmail.com>
+Subject: test
+From: somdutt ganguly <tosomdutt@gmail.com>
+To: mydear-23432@brandlocato.com
+Content-Type: multipart/alternative; boundary=20cf306848f1baaa8304a710877f
+
+--20cf306848f1baaa8304a710877f
+Content-Type: text/plain; charset=ISO-8859-1
+
+ssdfdsasdfdas
+
+--20cf306848f1baaa8304a710877f
+Content-Type: text/html; charset=ISO-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+ssdfdsasdfdas=A0
+
+--20cf306848f1baaa8304a710877f--
+
