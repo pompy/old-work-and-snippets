@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml">
+
+<meta name="description" content="university menu"/>
+<meta name="author" content="Pompy"/>
+<meta name="copyright" content="TTS"/>
+<property name="inputmodes" value="dtmf"/> 
+<menu dtmf="true">
+  <prompt>
+    Welcome to main menu. Say the name of the required section or
+    <enumerate>
+      press <value expr="_dtmf"/> for <value expr="_prompt"/>,
+    </enumerate>
+  </prompt>
+  <choice next="#schools">
+    schools
+  </choice>
+  <choice next="#financialissues">
+    financial issues
+  </choice>
+  <choice next="#news">
+    campus news
+  </choice>
+ <choice next="#library">
+    library
+  </choice>
+ <choice next="#record">
+    Leave a message
+  </choice>
+<choice next="#exit">
+Exit
+</choice>
+
+  <noinput> Please say one of <enumerate/> </noinput>
+  <nomatch> I don't understand you. Please say one of <enumerate/> </nomatch>
+</menu>
+
+<form id="schools">
+  <block>
+ <goto next="schools.xml" />
+</block>
+
+</form>
+
+<form id="financialissues">
+ 
+ <block>
+ <goto next="financialissues.xml" />
+</block>
+
+</form>
+
+<form id="news">
+   <block>
+ <goto next="news.xml" />
+</block>
+
+</form>
+
+
+<form id="library">
+  <block>
+ <goto next="library.xml" />
+</block>
+
+</form>
+
+
+<form id="record">
+ <block>
+ <goto next="audio.xml" />
+</block>
+
+</form>
+
+<form id="exit">
+<block>
+<prompt> O K. Bye Bye </prompt>
+<exit/>
+</block>
+</form>
+</vxml>

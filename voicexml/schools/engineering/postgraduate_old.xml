@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml">
+
+<meta name="description" content="university menu"/>
+<meta name="author" content="Pompy"/>
+<meta name="copyright" content="TTS"/>
+<property name="inputmodes" value="dtmf"/> 
+<menu dtmf="true">
+  <prompt>
+    Welcome to Postgraduate Section - under engineering
+    <enumerate>
+      press <value expr="_dtmf"/> for <value expr="_prompt"/>,
+    </enumerate>
+  </prompt>
+  <choice next="#fulltime">
+    Full Time
+  </choice>
+  <choice next="#parttime">
+    Part Time
+  </choice>
+  <choice next="#distant">
+    Distant Learning
+  </choice>
+<choice next="#information">
+    Information for International Students
+  </choice>
+<choice next="#menu">
+Go back to Main main
+</choice>
+<choice next="#exit">
+Exit
+</choice>
+  <noinput> Please say one of <enumerate/> </noinput>
+  <nomatch> I don't understand you. Please say one of <enumerate/> </nomatch>
+</menu>
+
+<form id="fulltime">
+ 
+  <block> Bradford university has lots of full time courses</block>
+
+</form>
+
+<form id="parttime">
+<block>
+We have lots of part time courses
+</block>
+</form>
+
+<form id="distant">
+  <block> 
+<goto next="postgraduate/distant.xml" />
+</block>
+</form>
+
+
+<form id="information">
+  <block> We have lots of international students</block>
+</form>
+
+<form id="menu">
+ <block>
+ <goto next="../../menu.xml" />
+</block>
+
+</form>
+
+<form id="exit">
+<block>
+<prompt> O K. Bye Bye </prompt>
+<exit/>
+</block>
+</form>
+
+
+
+</vxml>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<vxml version="2.0" lang="en">
+<form>
+<block>
+<prompt>
+There are 1 million books in the library
+</prompt>
+</block>
+</form>
+</vxml>

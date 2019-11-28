@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml">
+
+<meta name="description" content="university menu"/>
+<meta name="author" content="Pompy"/>
+<meta name="copyright" content="TTS"/>
+<property name="inputmodes" value="dtmf"/> 
+<menu dtmf="true">
+  <prompt>
+    Welcome to Distance Learning Courses Menu
+    <enumerate>
+      press <value expr="_dtmf"/> for <value expr="_prompt"/>,
+    </enumerate>
+  </prompt>
+  <choice next="#eee">
+    Electrical and electronic engineering
+  </choice>
+  <choice next="#itm">
+    Information Technology Management
+  </choice>
+<choice next="#mech">
+    Mechanical Engineering
+  </choice>
+<choice next="#med">
+    Medical Engineering
+  </choice>
+
+<choice next="#menu">
+Go back to Main main
+</choice>
+<choice next="#exit">
+Exit
+</choice>
+  <noinput> Please say one of <enumerate/> </noinput>
+  <nomatch> I don't understand you. Please say one of <enumerate/> </nomatch>
+</menu>
+
+<form id="eee">
+ 
+  <block>Distance learning in EEE is cool</block>
+
+</form>
+
+<form id="itm">
+  <block> 
+<goto next="courses/itm.xml" />
+</block>
+</form>
+
+<form id="mech">
+ 
+  <block>Distance learning in mechanical engineering is cool</block>
+
+</form>
+
+
+<form id="med">
+ 
+  <block>Distance learning in medical engineering is cool</block>
+
+</form>
+
+
+<form id="menu">
+ <block>
+ <goto next="../../../../menu.xml" />
+</block>
+
+</form>
+
+<form id="exit">
+<block>
+<prompt> O K. Bye Bye </prompt>
+<exit/>
+</block>
+</form>
+
+
+
+</vxml>

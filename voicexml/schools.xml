@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml">
+
+<meta name="description" content="university menu"/>
+<meta name="author" content="Pompy"/>
+<meta name="copyright" content="TTS"/>
+<property name="inputmodes" value="dtmf"/> 
+<menu dtmf="true">
+  <prompt>
+    Welcome to Bratford University Schools Menu. Please say the name of the required school you wish to access or
+    <enumerate>
+      press <value expr="_dtmf"/> for <value expr="_prompt"/>,
+    </enumerate>
+  </prompt>
+  <choice next="#computing">
+    school of computing , informatics and media
+  </choice>
+  <choice next="#engineering">
+    School of engineering, design and technology
+  </choice>
+  <choice next="#health">
+    School of health studies
+  </choice>
+ <choice next="#management">
+    School of management
+  </choice>
+<choice next="#menu">
+Go back to Main main
+</choice>
+<choice next="#exit">
+Exit
+</choice>
+  <noinput> Please say one of <enumerate/> </noinput>
+  <nomatch> I don't understand you. Please say one of <enumerate/> </nomatch>
+</menu>
+
+<form id="computing">
+  <block>
+ <goto next="schools/computing.xml" />
+</block>
+
+</form>
+
+<form id="engineering">
+  <block>
+ <goto next="schools/engineering.xml" />
+</block>
+</form>
+
+<form id="health">
+  <block>
+ <goto next="schools/health.xml" />
+</block>
+</form>
+
+
+<form id="management">
+  <block>
+ <goto next="schools/management.xml" />
+</block>
+</form>
+
+
+<form id="menu">
+ <block>
+ <goto next="menu.xml" />
+</block>
+
+</form>
+
+<form id="exit">
+<block>
+<prompt> O K. Bye Bye </prompt>
+<exit/>
+</block>
+</form>
+
+
+
+</vxml>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.0" xmlns="http://www.w3.org/2001/vxml">
+
+<meta name="description" content="university menu"/>
+<meta name="author" content="Pompy"/>
+<meta name="copyright" content="TTS"/>
+<property name="inputmodes" value="dtmf"/> 
+<menu dtmf="true">
+  <prompt>
+    See the list of  information technology management modules
+    <enumerate>
+      press <value expr="_dtmf"/> for <value expr="_prompt"/>,
+    </enumerate>
+  </prompt>
+  <choice next="#maths">
+    Basic Maths
+  </choice>
+  <choice next="#programming">
+    Advanced Web and server programming
+  </choice>
+ <choice next="#network">
+    Network and protocol
+  </choice>
+<choice next="#six">
+    six sigma for business excellence
+  </choice>
+  <choice next="#risk">
+    Risk Management
+  </choice>
+<choice next="#cryptography">
+    Cryptography and network security
+  </choice>
+
+<choice next="#menu">
+Go back to Main main
+</choice>
+<choice next="#exit">
+Exit
+</choice>
+  <noinput> Please say one of <enumerate/> </noinput>
+  <nomatch> I don't understand you. Please say one of <enumerate/> </nomatch>
+</menu>
+
+<form id="maths">
+ 
+  <block>Maths is cool!</block>
+
+</form>
+
+<choice next="#menu">
+Go back to Main main
+</choice>
+<choice next="#exit">
+Exit
+</choice>
+  <noinput> Please say one of <enumerate/> </noinput>
+  <nomatch> I don't understand you. Please say one of <enumerate/> </nomatch>
+</menu>
+
+<form id="network">
+ 
+  <block>Network and protocols are cool!</block>
+
+</form>
+
+<form id="six">
+  <block> 
+<goto next="programming/six.xml" />
+</block>
+</form>
+<form id="risk">
+ 
+  <block>Risk Management is cool!</block>
+
+</form>
+<form id="cryptography">
+ 
+  <block>cryptography is cool!</block>
+
+</form>
+
+<form id="menu">
+ <block>
+ <goto next="../../../../../../../menu.xml" />
+</block>
+
+</form>
+
+<form id="exit">
+<block>
+<prompt> O K. Bye Bye </prompt>
+<exit/>
+</block>
+</form>
+
+
+
+</vxml>

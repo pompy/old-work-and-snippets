@@ -1,0 +1,20 @@
+
+<?xml version='1.0'?>
+<vxml version="2.0">
+    <form>
+        <record name="audio" maxtime="120s" finalsilence="4s" beep="true" dtmfterm="true">
+            <prompt bargein="false">
+                Start recording after the beep.  Press any dtmf key when finished.
+            </prompt>
+
+            <filled>
+                <assign name="firstname" expr="'professor'" />
+                <assign name="lastname" expr="'falken'" />
+                <submit next="saveaudio.php"
+                        namelist="firstname lastname audio"
+                        enctype="multipart/form-data"
+                        method="post" />
+            </filled>
+        </record>
+    </form>
+</vxml>

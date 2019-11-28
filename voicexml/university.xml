@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<vxml version="2.0" lang="en">
+
+<property name="inputmodes" value="dtmf"/> 
+<form>
+
+
+    <field name="authenticate" type="digits?length=4">
+      <prompt>
+      Welcome to the University Of Bradford - Please authenticate By Entering your PIN ?
+      </prompt>
+
+      <filled>
+      System is verifying your pin!
+      <if cond="authenticate!=0000">
+        Sorry Your PIN is incorrect!
+       
+      <else />
+You are authenticated successfully.
+      <goto next="menu.xml" />
+        
+      </if>
+      </filled>
+    </field>
+  </form>
+
+
+</vxml>
+
